@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(77,77,77);
+}
+
+svg{
+    position: absolute;
+    width: 400px;
+    fill:none;
+}
+svg:nth-child(2){
+    filter:blur(40px);
+}
+svg path{
+    d: path("M7.4,41.5c33.1-28,58.9-33.1,76.8-32.2c14.5,0.8,20.9,5.3,73.6,29c50.7,22.7,59.2,24.9,69.5,25.1c14.2,0.2,39.2-3.3,70.3-30.2");
+    stroke: #ff0092;
+    stroke-width: 50;
+    stroke-linecap: round;
+    transform: translate(50px, 50px);
+    animation: animate 2s ease-in-out infinite;
+    }
+
+    @keyframes animate {
+        0%{
+            d: path("M7.4,41.5c33.1-28,58.9-33.1,76.8-32.2c14.5,0.8,20.9,5.3,73.6,29c50.7,22.7,59.2,24.9,69.5,25.1c14.2,0.2,39.2-3.3,70.3-30.2");
+            stroke: #ff0092;
+        }
+        50%{
+            d: path("M6.8,41.2C27.7,54.1,53.1,61,70.7,59.7c7-0.5,15.3,1.7,91-22.5c46-14.7,56-21.8,73-23c26.9-1.9,45.9,6.1,62.2,19");
+            stroke: #00c3ff; 
+        }
+    }
