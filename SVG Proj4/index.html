@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>SVG Project 4</title>
+    <style>
+          html, body{
+            background-color: rgb(60,60,60);
+            height: 100%;
+          }
+          .svg-wrapper{
+            position: relative;
+            top:50%; 
+            text-align: center;
+            transform: translateY(-50%);
+            width: 320px;
+            margin:auto;
+          }
+          .text{
+            color:white;
+            line-height: 30px;
+            letter-spacing: 5px;
+            top: -48px;
+            position: relative;
+          }
+          .shape{
+            fill: transparent;
+            stroke: red;
+            stroke-width: 8px;
+            stroke-dasharray: 140px 540px;
+            stroke-dashoffset: -470px;
+            transition: stroke-width 1s, stroke-dasharray 1s, stroke-dashoffset 1s ;
+          }
+
+          .svg-wrapper:hover .shape{
+            stroke-dasharray: 760;
+            stroke-width: 2px;
+            stroke-dashoffset: 0;
+          }
+    </style>
+  </head>
+
+  <body>
+      <div class="svg-wrapper">
+        <svg height="60" width="320" xmlns="http:/www.w3.org/2000/svg">
+          <rect class="shape" width="320" height="60"  ></rect>
+          <div class="text"> YOUR TEXT </div>
+        </svg>
+      </div>
+  </body>
+</html>
