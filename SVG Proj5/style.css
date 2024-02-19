@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(60,60,60);
+    filter: url(#wave)
+}
+svg{
+    width:0;
+    height: 0;
+}
+h2{
+    color:white;
+    font-weight: bold;
+    font-size: 30px;
+}
+ 
